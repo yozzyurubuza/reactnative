@@ -2,6 +2,8 @@ import React from "react";
 import { View, Text, StyleSheet, FlatList } from "react-native";
 
 const ListScreen = function () {
+  //Solving the key issue
+  //1. You can manually put a key inside the object, which must be unique
   const friends = [
     { name: "Friend #1" },
     { name: "Friend #2" },
@@ -18,7 +20,9 @@ const ListScreen = function () {
   // Ideal scenario is just remove the single item in the list and update the list without reloading the whole list.
   // Placing a key will resolve this issue, thus knowing which element in the list was deleted and will not need to reload to the whole list. (Useful for performance optimization)
   return (
+    //2. Using keyExtractor - using name property
     <FlatList
+      keyExtractor={(friend) => friend.name}
       data={friends}
       renderItem={({ item }) => {
         // element === {item : {name: 'Friend #1'}, index: 0}
