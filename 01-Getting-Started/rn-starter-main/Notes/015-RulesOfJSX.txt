@@ -10,3 +10,7 @@ Ex. Wrap <Text> inside of <View>
 
 4. We can assign JSX elements to a variable, then show that variable inside of a JSX block.
 
+
+One Common Error
+
+* When returning a multi-line JSX statement, insert them inside a () or put the opening tag (Ex. <View>) beside the return statement.
