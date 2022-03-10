@@ -1,0 +1,12 @@
+Rules of JSX
+
+1. We can assemble different JSX elements like normal HTML
+Ex. Wrap <Text> inside of <View>
+
+2. We configure different JSX elements using 'props'
+
+3. We can refer to JS variables inside of a JSX block by using curly braces.
+- However, <Text> cannot display objects.
+
+4. We can assign JSX elements to a variable, then show that variable inside of a JSX block.
+
