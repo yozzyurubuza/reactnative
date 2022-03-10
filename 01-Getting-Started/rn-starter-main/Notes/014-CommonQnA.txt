@@ -1,0 +1,25 @@
+Common Questions and Answers
+
+Q: What's that 'Text' thing?
+A: A 'primitive' React element. Used to show some basic content on the screen.
+
+Some Primitive Elements:
+Text - Show some text to the user. Any text placed outside of a 'Text' will result in an error.
+
+View - General purpose element used for grouping other elements or styling
+
+Image - Show an Image
+
+Button - Show a button the user can press. Gives us some feedback whenever the user presses it.
+
+
+Q: What's that HTML looking stuff?
+A: JSX! It is a 'dialect' of Javascript that tells React what content we want to show.
+
+* You can try babeljs.io to convert JSX to normal JS
+
+Q: What's that 'appNavigator' in the 'App.js' file?
+A: It's a tool from a library called 'React Navigation' that is used to show different screens to the user.
+
+Q: How's that 'styles' thing work?
+A: The 'StyleSheet.create()' function validates a set of styling rules that we pass into it. We can use it or pass styling directly into an element.
