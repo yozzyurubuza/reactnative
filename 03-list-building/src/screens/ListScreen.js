@@ -14,6 +14,9 @@ const ListScreen = function () {
     { name: "Friend #9" },
   ];
 
+  // Notes: Missing Keys for items, when deleting a single item from the list, the entire list needs to be reloaded just to display the list again.
+  // Ideal scenario is just remove the single item in the list and update the list without reloading the whole list.
+  // Placing a key will resolve this issue, thus knowing which element in the list was deleted and will not need to reload to the whole list. (Useful for performance optimization)
   return (
     <FlatList
       data={friends}
