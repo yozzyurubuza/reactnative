@@ -22,16 +22,22 @@ const ListScreen = function () {
   return (
     //2. Using keyExtractor - using name property
     <FlatList
+      horizontal //Makes the list of data display horizontal
+      showsHorizontalScrollIndicator={false} //Hide horizontal scroll bar
       keyExtractor={(friend) => friend.name}
       data={friends}
       renderItem={({ item }) => {
         // element === {item : {name: 'Friend #1'}, index: 0}
-        return <Text>{item.name}</Text>;
+        return <Text style={styles.textStyle}>{item.name}</Text>;
       }}
     />
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  textStyle: {
+    marginVertical: 50,
+  },
+});
 
 export default ListScreen;
